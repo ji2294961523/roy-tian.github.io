@@ -7,7 +7,7 @@
 
     <style>
       html {
-        font-family: sans-serif;
+        font-family: sans-serif '微软雅黑';
       }
       body {
         width: 50%;
@@ -29,7 +29,7 @@
 
 <div class="form">
   <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-  <input type="submit" value="确认" class="guessSubmit">
+  <input type="submit" value="确定" class="guessSubmit">
 </div>
 
 <div class="resultParas">
@@ -57,7 +57,7 @@
  
     var userGuess = Number(guessField.value);
     if(guessCount === 1) {
-      guesses.textContent = '上次猜测的数：';
+      guesses.textContent = '上次猜的数：';
     }
     guesses.textContent += userGuess + ' ';
  
@@ -70,7 +70,7 @@
       lastResult.textContent = '!!!GAME OVER!!!';
       setGameOver();
     } else {
-      lastResult.textContent = '猜错了！';
+      lastResult.textContent = '你猜错了！';
       lastResult.style.backgroundColor = 'red';
       if(userGuess < randomNumber) {
         lowOrHi.textContent = '你猜低了！';
@@ -89,7 +89,7 @@
 	  guessField.disabled = true;
 	  guessSubmit.disabled = true;
 	  resetButton = document.createElement('button');
-	  resetButton.textContent = '开始新的游戏';
+	  resetButton.textContent = '开始新游戏';
 	  document.body.appendChild(resetButton);
 	  resetButton.addeventListener('click', resetGame);
   }
