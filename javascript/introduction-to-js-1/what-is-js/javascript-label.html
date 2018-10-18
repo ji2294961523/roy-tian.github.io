@@ -5,7 +5,7 @@
     <title>JavaScript label example</title>
     <style>
       p {
-        font-family: 'helvetica neue', helvetica, sans-serif;
+        font-family: sans-serif;
         letter-spacing: 1px;
         text-transform: uppercase;
         text-align: center;
@@ -21,7 +21,7 @@
     </style>
   </head>
   <body>
-    <p>Player 1: Chris</p>
+    <p>玩家1：小明</p>
 
     <script>
       var para = document.querySelector('p');
@@ -29,8 +29,8 @@
       para.addEventListener('click', updateName);
 
       function updateName() {
-        var name = prompt('Enter a new name');
-        para.textContent = 'Player 1: ' + name;
+        var name = prompt('输入一个新的名字：');
+        para.textContent = '玩家1：' + name;
       }
     </script>
   </body>
