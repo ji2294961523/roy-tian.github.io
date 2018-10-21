@@ -39,20 +39,21 @@
 
   <body>
     <div>
-      <label for="customname">Enter custom name:</label>
-      <input id="customname" type="text" placeholder="">
+      <label for="customname" id="lbl-customname">请输入自定义的名字：</label>
+      <input id="customname" type="text" placeholder="李雷">
     </div>
     <div>
-      <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
-      <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
-    </div>
-    <div>
-      <button class="randomize">Generate random story</button>
-    </div>
-    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
-    <p class="story"></p>
-    
+      <label for="cn" id="lbl-cn">中国</label><input id="cn" type="radio" name="country" value="cn" checked>
+      <label for="us" id="lbl-us">美国</label><input id="us" type="radio" name="country" value="us">
+      <label for="uk" id="lbl-uk">英国</label><input id="uk" type="radio" name="country" value="uk">
+  </div>
+  <div>
+      <button class="randomize">随机生成笑话</button>
+  </div>
+  <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+  <p class="story"></p>
 
+  <script src="ui.js"></script>
     
   </body>
 </html>
