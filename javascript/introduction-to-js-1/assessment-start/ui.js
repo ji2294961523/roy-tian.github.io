@@ -1,4 +1,5 @@
 document.getElementById('cn').onclick = function () {
+    document.title = '笑话生成器';
     document.getElementById('lbl-customname').textContent = '请输入自定义的名字：';
     document.getElementById('lbl-cn').textContent = '中国';
     document.getElementById('lbl-us').textContent = '美国';
@@ -8,6 +9,7 @@ document.getElementById('cn').onclick = function () {
 };
 
 document.getElementById('us').onclick = document.getElementById('uk').onclick = function () {
+    document.title = 'Silly story generator';
     document.getElementById('lbl-customname').textContent = 'Enter custom name:';
     document.getElementById('lbl-cn').textContent = 'CN';
     document.getElementById('lbl-us').textContent = 'US';
