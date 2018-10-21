@@ -5,7 +5,7 @@ document.getElementById('cn').onclick = function () {
     document.getElementById('lbl-us').textContent = '美国';
     document.getElementById('lbl-uk').textContent = '英国';
     document.getElementById('customname').placeholder = '李雷';
-    randomize.textContent = '随机生成笑话';
+    document.querySelector('.randomize').textContent = '随机生成笑话';
 };
 
 document.getElementById('us').onclick = document.getElementById('uk').onclick = function () {
@@ -15,5 +15,5 @@ document.getElementById('us').onclick = document.getElementById('uk').onclick = 
     document.getElementById('lbl-us').textContent = 'US';
     document.getElementById('lbl-uk').textContent = 'UK';
     document.getElementById('customname').placeholder = 'Bob';
-    randomize.textContent = 'Generate random story';
+    document.querySelector('.randomize').textContent = 'Generate random story';
 };
