@@ -33,6 +33,7 @@ h1 {
     text-shadow: 1px 1px 1px white;
     font-size: medium;
     cursor: pointer;
+    transition-duration: .5s;
     z-index: 9;
 }
 
